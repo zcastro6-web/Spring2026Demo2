@@ -32,10 +32,6 @@ window.addEventListener(
   { passive: false }
 );
 
-html, body {
-  overflow-x: hidden;
-}
-
 // Global
 var velocityY = 0;
 var gravity = 0.8;
