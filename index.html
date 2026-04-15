@@ -2,69 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Platformer Quest</title>
 
   <link rel="stylesheet" href="style.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 
   <script src="p5.min.js"></script>
   <script src="p5.sound.min.js"></script>
 </head>
+
 <body>
   <div class="page-layout">
-    
+
     <main class="main-content">
-      <h1 class="title">Pandemic</h1>
+      <h1 class="title">Platformer Quest</h1>
 
       <p class="description">
         A precision-based platformer where timing is everything. Navigate through obstacles, avoid hazards, and restart instantly when you fail.
         Inspired by retro mechanics and modern web-based game development, this project explores the balance between frustration and mastery.
       </p>
 
-      <h2 class="credits">By Zanroe &amp; Jeremiah</h2>
+      <h2 class="credits">By Zanroe & Jeremiah</h2>
 
       <div id="game-container"></div>
     </main>
 
+
     <aside class="sidebar">
-      <h3>Inspiration &amp; References</h3>
+      <h3>Inspiration & References</h3>
 
-      <section class="ref-section">
+      <div class="ref-section">
         <h4>Jason Erdreich</h4>
-        <a class="ref-card" href="https://www.youtube.com/watch?v=HDn9zc8QYA4" target="_blank">
-          <img src="mqdefault.jpg" alt="Jason Erdreich tutorial thumbnail">
-          <span>Programming a Retro-Style Video Game in P5.js</span>
-        </a>
-      </section>
 
-      <section class="ref-section">
+        <a class="ref-card" href="https://www.youtube.com/watch?v=FZlpuQeCvlk" target="_blank">
+          <img src="mqdefault.jpg">
+          <span>Programming a Retro-Style Game in P5.js</span>
+        </a>
+      </div>
+
+      <div class="ref-section">
         <h4>Xin Xin</h4>
+
         <a class="ref-card" href="https://www.youtube.com/watch?v=cZ_VHAT_Sq4" target="_blank">
-          <img src="mqdefault.jpg" alt="Xin Xin collision tutorial thumbnail">
+          <img src="mqdefault.jpg">
           <span>Collision Detection</span>
         </a>
-      </section>
 
-      <section class="ref-section">
+        <a class="ref-card" href="https://www.youtube.com/watch?v=asvnmtVjeEk" target="_blank">
+          <img src="mqdefault.jpg">
+          <span>Mouse & Key Inputs</span>
+        </a>
+
+        <a class="ref-card" href="https://www.youtube.com/watch?v=JV5XBmaQdIA" target="_blank">
+          <img src="mqdefault.jpg">
+          <span>Classes & Objects</span>
+        </a>
+      </div>
+
+      <div class="ref-section">
         <h4>Scratch</h4>
-        <a class="ref-card" href="https://scratch.mit.edu/projects/14352503/" target="_blank">
-          <img src="mqdefault.jpg" alt="Scratch project thumbnail">
-          <span>Scratch Platformer Inspiration by Semi99999</span>
-        </a>
-      </section>
 
-      <section class="ref-section">
-        <h4>OpenProcessing</h4>
-        <a class="ref-card" href="https://openprocessing.org/sketch/2502833" target="_blank">
-          <img src="mqdefault.jpg" alt="OpenProcessing reference thumbnail">
-          <span>OpenProcessing Reference by Ååårhusianer</span>
+        <a class="ref-card" href="https://scratch.mit.edu/projects/14352503/" target="_blank">
+          <img src="mqdefault.jpg">
+          <span>Platformer Inspiration by Semi99999</span>
         </a>
-      </section>
+      </div>
+
+      <div class="ref-section">
+        <h4>OpenProcessing</h4>
+
+        <a class="ref-card" href="https://openprocessing.org/sketch/2502833" target="_blank">
+          <img src="mqdefault.jpg">
+          <span>Reference by Ååårhusianer</span>
+        </a>
+
+        <a class="ref-card" href="https://openprocessing.org/sketch/2915715" target="_blank">
+          <img src="mqdefault.jpg">
+          <span>Your Inspiration Sketch</span>
+        </a>
+      </div>
+
     </aside>
+
   </div>
 
   <script src="sketch.js"></script>
