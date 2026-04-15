@@ -36,10 +36,6 @@ html, body {
   overflow-x: hidden;
 }
 
-canvas {
-  outline: none;
-}
-
 // Global
 var velocityY = 0;
 var gravity = 0.8;
