@@ -16,22 +16,6 @@ document.addEventListener("keydown", function (e) {
   }
 }, false);
 
-window.addEventListener(
-  "keydown",
-  function (e) {
-    if (
-      e.code === "Space" ||
-      e.code === "ArrowUp" ||
-      e.code === "ArrowDown" ||
-      e.code === "ArrowLeft" ||
-      e.code === "ArrowRight"
-    ) {
-      e.preventDefault();
-    }
-  },
-  { passive: false }
-);
-
 // Global
 var velocityY = 0;
 var gravity = 0.8;
@@ -995,32 +979,4 @@ function distToSegment(px, py, x1, y1, x2, y2) {
   var closestY = y1 + t * dy;
 
   return dist(px, py, closestX, closestY);
-}
-
-function keyPressed() {
-  if (stage == -1 && key === ' ') {
-    stage = 0;
-    spawnX = 100;
-    spawnY = 375;
-    die();
-    gameStartTime = millis();
-    gameActive = true;
-    loop();
-    return false;
-  }
-
-  if ((key === ' ' || keyCode === UP_ARROW) && isGrounded && stage >= 0) {
-    velocityY = -15;
-    isGrounded = false;
-    return false;
-  }
-
-  if (
-    keyCode === UP_ARROW ||
-    keyCode === DOWN_ARROW ||
-    keyCode === LEFT_ARROW ||
-    keyCode === RIGHT_ARROW
-  ) {
-    return false;
-  }
 }
