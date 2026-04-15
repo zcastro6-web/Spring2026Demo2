@@ -2,6 +2,8 @@
 // var credit goes to Jason Erdreich https://www.youtube.com/watch?v=HDn9zc8QYA4 https://www.youtube.com/watch?v=StoBCNiQakM
 // gravity credit goes to Jason https://www.youtube.com/watch?v=StoBCNiQakM 
 
+console.log("sketch loaded");
+
 document.addEventListener("keydown", function (e) {
   if (
     e.code === "Space" ||
