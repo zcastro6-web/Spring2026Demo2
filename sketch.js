@@ -173,11 +173,22 @@ function keyPressed() {
     gameStartTime = millis();
     gameActive = true;
     loop();
+    return false;
   }
 
   if ((key === ' ' || keyCode === UP_ARROW) && isGrounded && stage >= 0) {
     velocityY = -15;
     isGrounded = false;
+    return false;
+  }
+
+  if (
+    keyCode === UP_ARROW ||
+    keyCode === DOWN_ARROW ||
+    keyCode === LEFT_ARROW ||
+    keyCode === RIGHT_ARROW
+  ) {
+    return false;
   }
 }
 
