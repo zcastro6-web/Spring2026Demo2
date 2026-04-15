@@ -2,6 +2,22 @@
 // var credit goes to Jason Erdreich https://www.youtube.com/watch?v=HDn9zc8QYA4 https://www.youtube.com/watch?v=StoBCNiQakM
 // gravity credit goes to Jason https://www.youtube.com/watch?v=StoBCNiQakM 
 
+window.addEventListener(
+  "keydown",
+  function (e) {
+    if (
+      e.code === "Space" ||
+      e.code === "ArrowUp" ||
+      e.code === "ArrowDown" ||
+      e.code === "ArrowLeft" ||
+      e.code === "ArrowRight"
+    ) {
+      e.preventDefault();
+    }
+  },
+  { passive: false }
+);
+
 // Global
 var velocityY = 0;
 var gravity = 0.8;
