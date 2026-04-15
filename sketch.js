@@ -203,14 +203,7 @@ function keyPressed() {
     return false;
   }
 
-  if (
-    keyCode === UP_ARROW ||
-    keyCode === DOWN_ARROW ||
-    keyCode === LEFT_ARROW ||
-    keyCode === RIGHT_ARROW
-  ) {
-    return false;
-  }
+  return false;
 }
 
 // startscreen
