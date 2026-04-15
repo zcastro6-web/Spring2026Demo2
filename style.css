@@ -52,14 +52,10 @@ body {
 #game-container {
   width: 800px;
   height: 500px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 24px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
-  background: transparent;
-  padding: 0;
-  box-shadow: none;
 }
 
 #game-container canvas {
