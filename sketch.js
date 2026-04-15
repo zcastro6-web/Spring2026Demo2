@@ -18,6 +18,14 @@ window.addEventListener(
   { passive: false }
 );
 
+html, body {
+  overflow-x: hidden;
+}
+
+canvas {
+  outline: none;
+}
+
 // Global
 var velocityY = 0;
 var gravity = 0.8;
@@ -124,7 +132,8 @@ var iEnemyX = 500, iEnemyDir = 5;
 
 // Setup
 function setup() {
-  createCanvas(800, 500);
+  let canvas = createCanvas(800, 500);
+  canvas.parent("game-container");
   rectMode(CENTER);
   textAlign(CENTER);
 }
